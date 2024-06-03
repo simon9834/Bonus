@@ -23,7 +23,8 @@ public class Class {
     }
 
     public void vowels(String string, int vowelsCount){
-        //char[] toCharArray()
-        string.toCharArray();
+        char[] charArray = string.toCharArray();
+        for ()
+            charArray[i]
     }
 }
