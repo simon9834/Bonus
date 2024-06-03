@@ -22,9 +22,24 @@ public class Class {
         return returnString + "\n360 spins count: " + fullSpinCount;
     }
 
-    public void vowels(String string, int vowelsCount){
+    public String vowels(String string, int vowelsCount){
+        String vowels = "";
+        int counter = vowelsCount;
+        int vowelCountActual = 0;
         char[] charArray = string.toCharArray();
-        for ()
-            charArray[i]
+        for (int i = 0; i < charArray.length; i++){
+            if(counter != 0){
+                if(charArray[i] == 'a' || charArray[i] == 'e'|| charArray[i] == 'i'|| charArray[i] == 'o' || charArray[i] == 'u'){
+                    vowels += charArray[i] + ", ";
+                    vowelCountActual++;
+                    counter--;
+                }
+
+            }
+        }
+        if(vowelCountActual > vowelsCount){
+            return "invalid";
+        }
+        return vowels;
     }
 }
